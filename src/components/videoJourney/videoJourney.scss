@@ -1,0 +1,102 @@
+.journey {
+    padding: 75px 0;
+    &__cursor {
+        all: unset;
+        cursor: pointer;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__h1 {
+        font-family: 'Forum', sans-serif;
+        font-size: 80px;
+        color: #9D8665;
+        letter-spacing: 5px;
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 200;
+        width: 50%;
+        line-height: 39px;
+    }
+    &__videos {
+        display: flex;
+        column-gap: calc((100% - 452px * 3) / 2);
+        margin-top: 40px;
+    }
+    &__video {
+        margin: 75px auto 0 auto;
+        position: relative;
+        &-play {
+            position: absolute;
+            right: 43%;
+            top: 30%
+        }
+        &-player {
+            padding: 35px 0;
+            width: 100%;
+            background-color: black;
+        }
+        &-wrapper {
+            display: flex;
+            width: fit-content;
+            column-gap: 50px;
+            margin: 0 auto;
+        }
+        &-card {
+            position: relative;
+            width: fit-content;
+            &-info {
+                position: absolute;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 15px 0 0 10px;
+                top: 0;
+                &-dots {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 2px;
+                }
+                &-dot {
+                    width: 4px;
+                    height: 4px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                }
+                &-description {
+                    color: white;
+                    font-size: 18px;
+                    font-family: 'Roboto', sans-serif;
+                    margin: 0 23px 0 10px;
+                }
+            }
+        }
+        &-youtube {
+            position: absolute;
+            top: 40%;
+            right: 43%;
+        }
+    }
+    &__pagination {
+        display: flex;
+        width: fit-content;
+        column-gap: 20px;
+        margin: 40px auto 0 auto;
+        &-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #999999;
+            border-radius: 50%;
+            &-active {
+                background-color: #333333;
+                &:hover {
+                    background-color: #710707;
+                }
+            }
+        }
+    }
+}

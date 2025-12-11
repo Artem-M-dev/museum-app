@@ -1,0 +1,130 @@
+.welcome {
+    background-color: black;
+    color: white;
+    position: relative;
+    padding-bottom: 65px;
+    &__head {
+        display: flex;
+        align-items: center;
+        padding: 64px 0;
+    }
+    &__head-elements {
+        display: flex;
+        column-gap: 25px;
+        p {
+            margin: 0;
+            font-size: 28px;
+            font-family: 'Forum', sans-serif;
+            letter-spacing: 5px;
+        }
+    }
+    &__text {
+        list-style-type: none;
+        display: flex;
+        column-gap: 55px;
+        margin: 0;
+        margin-left: auto;
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: 100;
+            &:hover {
+                color: #9D8665;
+            }
+            &:active {
+                color: #7E6C51;
+            }
+        }
+    }
+
+    &__content {
+        // position: relative;
+        &-wrapper {
+            display: flex;
+        }
+        &-info {
+            margin-top: 150px;
+            width: 600px;
+        }
+        &-h1 {
+            font-family: 'Forum', sans-serif;
+            font-size: 80px;
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 5px;
+        }
+        &-text {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 28px;
+            margin-top: 25px;
+            letter-spacing: 2px;
+        }
+        &-btn {
+            all: unset;
+            display: block;
+            width: 360px;
+            height: 75px;
+            background-color: #710707;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            font-weight: 200;
+            text-align: center;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            margin-top: 75px;
+            cursor: pointer;
+            &:hover {
+                background-color: #9D8665;
+            }
+        }
+    }
+    &__pagination {
+        position: absolute;
+        padding: 52px 74px;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        width: fit-content;
+        right: 240px;
+        bottom: 0;
+        ul {
+            margin: 0 60px 0 0;
+            padding: 0;
+            display: flex;
+            column-gap: 25px;
+        }
+        p {
+            margin: 0 55px 0 0;
+            font-size: 22px;
+        }
+        &-square {
+            display: block;
+            margin: 0;
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            cursor: pointer;
+            &-active {
+                background-color: #D2B183;
+                &:hover {
+                    background-color: #9D8665;
+                }
+            }
+        }
+        &-arrows {
+            display: flex;
+            column-gap: 20px;
+        }
+        &-arrow {
+            display: block;
+            margin: 0;
+            width: 30px;
+            height: 8px;
+            cursor: pointer;
+        }
+    }
+}
+

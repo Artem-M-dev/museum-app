@@ -1,0 +1,136 @@
+.m-10 {
+    margin-top: 10px;
+}
+.m-25 {
+    margin-top: 25px;
+}
+
+.tickets {
+    margin-top: 75px;
+    &__h1 {
+        font-family: 'Forum', sans-serif;
+        font-size: 80px;
+        color: #9D8665;
+    }
+    &__line {
+        width: 100%;
+        height: 3px;
+        margin-top: 25px;
+        background-color: #710707;
+    }
+    &__buy {
+        margin-top: 75px;
+        display: flex;
+        column-gap: 60px;
+    }
+    &__payment {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        &-type {
+            &-h3 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: 28px;
+            }
+        }
+        &-labels {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            margin-top: 50px;
+            span {
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                font-weight: 100;
+                margin-left: 23px;
+            }
+        }
+        &-label {
+            position: relative;
+            input {
+                all: unset;
+                width: 17px;
+                height: 17px;
+                border: 3px solid black;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            input:checked + span::after {
+                content: '';
+                position: absolute;
+                position: absolute;
+                top: 28%;
+                left: 7px;
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: black;
+            }
+        }
+        &-amount {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            &-h3 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: 28px;
+                text-align: right;
+            }
+            &-text {
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                font-weight: 300;
+            }
+            &-count {
+                display: flex;
+                column-gap: 37px;
+                align-items: center;
+                border: 4px solid black;
+                padding: 6px 14px;
+                margin-top: 15px;
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 22px;
+                    font-weight: 200;
+                }
+                button {
+                    all: unset;
+                    cursor: pointer;
+                    span {
+                        font-size: 32px;
+                    }
+                }
+            }
+            &-total {
+                font-family: 'Roboto', sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                margin-top: 50px;
+                text-align: right;
+                letter-spacing: 2px;
+            }
+            &-btn {
+                all: unset;
+                background-color: black;
+                color: white;
+                width: 175px;
+                height: 50px;
+                border-radius: 2px;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                font-weight: 300;
+                margin-top: 52px;
+                letter-spacing: 2px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #9D8665;
+                    color: black;
+                }
+            }
+        }
+    }
+}

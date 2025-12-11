@@ -1,0 +1,46 @@
+.picture {
+    background-color: black;
+    color: white;
+    &__wrapper {
+        padding: 75px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__h1 {
+        font-family: 'Forum', sans-serif;
+        font-size: 80px;
+        width: fit-content;
+        letter-spacing: 5px;
+    }
+    &__line {
+        width: 660px;
+        height: 3px;
+        background-color: #710707;
+        margin-top: 25px;
+    }
+    &__description {
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        width: 660px;
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 39px;
+        span {
+            color: #CAAA7D
+        }
+    }
+    &__images {
+        position: relative;
+        margin-top: 15px;
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 55%
+    }
+}
